@@ -154,14 +154,14 @@ Optional advanced waveform:
 
 Create the testbench file in project directory and run:
 ```
-export PATH="$PATH:$HOME/intelFPGA/20.1/modelsim_ase/bin"
+export PATH="$HOME/intelFPGA/20.1/modelsim_ase/bin:$PATH"
 vlib [whatever_folder_name]
 vlog [all-Verilog-files-needed]
 vsim -c [testbench_module_name] -do "run -all; quit"
 ```
 or with timing checks during simulation disabled
 ```
-export PATH="$PATH:$HOME/intelFPGA/20.1/modelsim_ase/bin"
+export PATH="$HOME/intelFPGA/20.1/modelsim_ase/bin:$PATH"
 vlib [whatever_folder_name]
 vlog +notimingchecks [all-Verilog-files-needed]
 vsim -c [testbench_module_name] -do "run -all; quit"
