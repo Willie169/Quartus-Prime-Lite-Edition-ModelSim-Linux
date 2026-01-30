@@ -7,9 +7,9 @@ This instruction follows NTUEE Switching Circuit and Logic Design (SCLD) course 
 <ol>
 <li>Download the installation script from <a href="https://www.intel.com/content/www/us/en/software-kit/868560/intel-quartus-prime-lite-edition-design-software-version-25-1-for-linux.html">https://www.intel.com/content/www/us/en/software-kit/868560/intel-quartus-prime-lite-edition-design-software-version-25-1-for-linux.html</a>.</li>
 <li>Run:
-<pre><code>
-chmod +x qinst-lite-linux-*std-*.run
-./qinst-lite-linux-*std-*.run</code></pre></li>
+<pre><code>chmod +x qinst-lite-linux-*std-*.run
+./qinst-lite-linux-*std-*.run
+</code></pre></li>
 <li>Select <strong>Cyclone IV device support</strong> on top of the default.</li>
 <li>Check <strong>Agree to <u>Altera Software License Agreement</u></strong>.</li>
 <li>Click <strong>Download & Install</strong>.</li>
@@ -20,9 +20,9 @@ chmod +x qinst-lite-linux-*std-*.run
 <ol>
 <li>Download the installation script from <a href="https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html">https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html</a>.</li>
 <li>Run:
-<pre><code>
-chmod +x ModelSimSetup-*-linux.run
-./ModelSimSetup-*-linux.run</code></pre></li>
+<pre><code>chmod +x ModelSimSetup-*-linux.run
+./ModelSimSetup-*-linux.run
+</code></pre></li>
 <li>Click <strong>Next</strong>.</li>
 <li>Click <strong>Next</strong>.</li>
 <li>Select <strong>ModelSim - Intel FGPA Starter Edition</strong>.</li>
