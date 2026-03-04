@@ -24,9 +24,10 @@ This instruction follows NTUEE Switching Circuit and Logic Design (SCLD) course 
 ./ModelSimSetup-*-linux.run
 </code></pre></li>
 <li>Click <strong>Next</strong>.</li>
-<li>Click <strong>Next</strong>.</li>
 <li>Select <strong>ModelSim - Intel FGPA Starter Edition</strong>.</li>
+<li>Click <strong>Next</strong>.</li>
 <li>Check <strong>I accept the agreement</strong>.</li>
+<li>Click <strong>Next</strong>.</li>
 <li>Click <strong>Next</strong>.</li>
 <li>Click <strong>Next</strong>.</li>
 </ol>
@@ -37,7 +38,7 @@ Run:
 ```
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install libxext6:i386 libx11-6:i386 libxft2:i386 libstdc++6:i386 libxrender1:i386 libfontconfig1:i386
+sudo apt install libxext6:i386 libx11-6:i386 libxft2:i386 libstdc++6:i386 libxrender1:i386 libfontconfig1:i386 -y
 ```
 
 ## Desktop
