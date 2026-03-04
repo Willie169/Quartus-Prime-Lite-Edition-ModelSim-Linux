@@ -62,7 +62,7 @@ EOF
 1. In `.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `PATH`.
 2. Open `Quartus Prime Lite Edition`.
 3. Go to `Tools` > `Options` > `EDA Tool Options`.
-4. Set `ModelSim` to `~/intelFPGA/20.1/modelsim_ase/bin`.
+4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `$HOME` replaced with its actual value.
 
 ## Example: Lab0
 
