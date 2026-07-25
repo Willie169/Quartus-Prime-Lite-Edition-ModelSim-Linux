@@ -5,7 +5,7 @@ This instruction follows NTUEE Switching Circuit and Logic Design (SCLD) course 
 ## Install Quartus Prime Lite Edition
 
 <ol>
-<li>Download the installation script from <a href="https://www.intel.com/content/www/us/en/software-kit/868560/intel-quartus-prime-lite-edition-design-software-version-25-1-for-linux.html">https://www.intel.com/content/www/us/en/software-kit/868560/intel-quartus-prime-lite-edition-design-software-version-25-1-for-linux.html</a>.</li>
+<li>Download the installation script from <a href="https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-linux">https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-linux</a>. Change the version to the latest if new version exists.</li>
 <li>Run:
 <pre><code>chmod +x qinst-lite-linux-*std-*.run
 ./qinst-lite-linux-*std-*.run
@@ -18,7 +18,7 @@ This instruction follows NTUEE Switching Circuit and Logic Design (SCLD) course 
 ## Install ModelSim
 
 <ol>
-<li>Download the installation script from <a href="https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html">https://www.intel.com/content/www/us/en/software-kit/750666/modelsim-intel-fpgas-standard-edition-software-version-20-1-1.html</a>.</li>
+<li>Download the installation script from <a href="https://www.altera.com/downloads/simulation-tools/modelsim-fpgas-standard-edition-software-version-20-1-1">https://www.altera.com/downloads/simulation-tools/modelsim-fpgas-standard-edition-software-version-20-1-1</a>. Change the version to the latest if new version exists.</li>
 <li>Run:
 <pre><code>chmod +x ModelSimSetup-*-linux.run
 ./ModelSimSetup-*-linux.run
