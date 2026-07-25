@@ -45,7 +45,7 @@ sudo apt install libxext6:i386 libx11-6:i386 libxft2:i386 libstdc++6:i386 libxre
 
 ### Desktop
 
-Execute the following with `25.1std` replaced with the real directory name:
+Execute the following with `25.1std` replaced with the actual directory name:
 ```
 cat > ~/.local/share/applications/quartus.desktop <<EOF
 [Desktop Entry]
@@ -61,10 +61,10 @@ EOF
 
 ### Configure ModelSim Path
 
-1. In `$HOME/.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `$PATH` with `20.1` replaced with the real directory name.
+1. In `$HOME/.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `$PATH` with `20.1` replaced with the actual directory name.
 2. Open `Quartus Prime Lite Edition`.
 3. Go to `Tools > Options > EDA Tool Options`.
-4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `20.1` replaced with the real directory name.
+4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `20.1` replaced with the actual directory name.
 
 ### Examples
 
