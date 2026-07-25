@@ -1,49 +1,49 @@
-# Quartus Prime Lite Edition and ModelSim on Linux
+## Quartus Prime Lite Edition and ModelSim on Linux
 
-This instruction follows NTUEE Switching Circuit and Logic Design (SCLD) course standard. Replace versions with the actual version of your installation.
+Examples are according to NTUEE Switching Circuit and Logic Design (SCLD) course.
 
-## Install Quartus Prime Lite Edition
+### Install Quartus Prime Lite Edition
 
-<ol>
-<li>Download the installation script from <a href="https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-linux">https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-linux</a>. Change the version to the latest if new version exists.</li>
-<li>Run:
-<pre><code>chmod +x qinst-lite-linux-*std-*.run
-./qinst-lite-linux-*std-*.run
-</code></pre></li>
-<li>Select <strong>Cyclone IV device support</strong> on top of the default.</li>
-<li>Check <strong>Agree to <u>Altera Software License Agreement</u></strong>.</li>
-<li>Click <strong>Download & Install</strong>.</li>
-</ol>
+1. Go to <https://www.altera.com/downloads/fpga-development-tools/quartus-prime-lite-edition-design-software-version-25-1-linux>. Change the version to the latest one in the drop-down menu of `Version` if a new version exists.
+2. Under `Installer (Recommended) > Quartus Prime Lite Edition Installer (SFX)`, click `Download`. You will get a file named `qinst-lite-linux-*std-*.run`, e.g., `qinst-lite-linux-25.1std-1129.run`.
+3. Go to the directory where the file locates and execute:
+  ```
+  chmod +x qinst-lite-linux-*std-*.run
+  ./qinst-lite-linux-*std-*.run
+  ```
+4. Select `Cyclone IV device support` on top of the default ones.
+5. Check `Agree to Altera Software License Agreement`.
+6. Click `Download & Install`.
 
-## Install ModelSim
+### Install ModelSim
 
-<ol>
-<li>Download the installation script from <a href="https://www.altera.com/downloads/simulation-tools/modelsim-fpgas-standard-edition-software-version-20-1-1">https://www.altera.com/downloads/simulation-tools/modelsim-fpgas-standard-edition-software-version-20-1-1</a>. Change the version to the latest if new version exists.</li>
-<li>Run:
-<pre><code>chmod +x ModelSimSetup-*-linux.run
-./ModelSimSetup-*-linux.run
-</code></pre></li>
-<li>Click <strong>Next</strong>.</li>
-<li>Select <strong>ModelSim - Intel FGPA Starter Edition</strong>.</li>
-<li>Click <strong>Next</strong>.</li>
-<li>Check <strong>I accept the agreement</strong>.</li>
-<li>Click <strong>Next</strong>.</li>
-<li>Click <strong>Next</strong>.</li>
-<li>Click <strong>Next</strong>.</li>
-</ol>
+1. Go to <https://www.altera.com/downloads/simulation-tools/modelsim-fpgas-standard-edition-software-version-20-1-1>. Change the version to the latest one in the drop-down menu of `Version` if a new version exists.
+2. Under `Linux Software > ModelSim Software`, click `Download`. You will get a file named `ModelSimSetup-*-linux.run`, e.g., `ModelSimSetup-20.1.1.720-linux.run`.
+3. Go to the directory where the file locates and execute:
+  ```
+  chmod +x ModelSimSetup-*-linux.run
+  ./ModelSimSetup-*-linux.run
+  ```
+4. Click `Next`.
+5. Select `ModelSim - Intel FGPA Starter Edition`.
+6. Click `Next`.
+7. Check `I accept the agreement`.
+8. Click `Next`.
+9. Click `Next`.
+10. Click `Next`.
 
-## Install Required Libraries
+### Install Required Libraries
 
-Run:
+Execute:
 ```
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install libxext6:i386 libx11-6:i386 libxft2:i386 libstdc++6:i386 libxrender1:i386 libfontconfig1:i386 -y
 ```
 
-## Desktop
+### Desktop
 
-Run:
+Execute the following with `25.1std` replaced with the real directory name:
 ```
 cat > ~/.local/share/applications/quartus.desktop <<EOF
 [Desktop Entry]
@@ -57,20 +57,22 @@ Categories=Development;
 EOF
 ```
 
-## Configure ModelSim Path
+### Configure ModelSim Path
 
-1. In `.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `PATH`.
+1. In `$HOME/.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `$PATH` with `20.1` replaced with the real directory name.
 2. Open `Quartus Prime Lite Edition`.
-3. Go to `Tools` > `Options` > `EDA Tool Options`.
-4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `$HOME` replaced with its actual value.
+3. Go to `Tools > Options > EDA Tool Options`.
+4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `20.1` replaced with the real directory name.
 
-## Example: Lab0
+### Examples
+
+#### Lab0
 
 1. Create a project directory (e.g., `~/SCLD/Lab0`).
-2. Copy `NTUEE_LogicDesign_Lib` folder to it.
+2. Copy `NTUEE_LogicDesign_Lib` directory to it.
 3. Open `Quartus Prime Lite Edition`.
 4. Click `Files` > `New Project Wizard`.
-5. In `What is the working directory for this project?`, browse and choose or paste the project directory in an absolute path (no `~` etc.).
+5. In `What is the working folder for this project?`, browse and choose or paste the project directory in an absolute path (no `~`, `$HOME`, etc.).
 6. Type a project name (e.g., `Lab0`) in `What is the name of this project?`.
 7. Click `Next`.
 8. Choose `Empty project`.
@@ -116,7 +118,7 @@ EOF
 48. Click `File` > `Save Project`.
 49. Close `Quartus Prime Lite Edition`.
 
-## Example: FA4
+#### FA4
 
 1. Create a project named `FA4` similar to `Lab0`.
 2. Click `File` > `New` > `Block Diagram/Schematic File` > `Ok`.
@@ -134,7 +136,7 @@ EOF
 14. A pin and a wire with the same name are linked automatically. Link `x`s to `A`, `y`s to `B`, and `S`s to `S` with `[0]` being the LSB.
 15. Save the file as `FA4.bdf`.
 16. Compile.
-17. Copy the given `Lab1_1.vwf` to the project folder.
+17. Copy the given `Lab1_1.vwf` to the project directory.
 18. Click `File` > `Open`, select `All Files (*.*)` in `Files of type`, select `Lab1_1.vwf`, and click `Open`. Pins with the same name are connected automatically.
 19. Remove `-novopt ` and save.
 20. Run functional simulation.
@@ -151,19 +153,17 @@ Optional advanced waveform:
 7. Run functional simulation.
 8. Create Verilog HDL design file from `FullAdder1.bdf` and `FA4.bdf` respectively.
 
-## Verilog Teatbench
+#### Verilog Teatbench
 
 Create the testbench file in project directory and run:
 ```
-export PATH="$HOME/intelFPGA/20.1/modelsim_ase/bin:$PATH"
-vlib [whatever_folder_name]
+vlib [whatever_directory_name]
 vlog [all-Verilog-files-needed]
 vsim -c [testbench_module_name] -do "run -all; quit"
 ```
 or with timing checks during simulation disabled
 ```
-export PATH="$HOME/intelFPGA/20.1/modelsim_ase/bin:$PATH"
-vlib [whatever_folder_name]
+vlib [whatever_directory_name]
 vlog +notimingchecks [all-Verilog-files-needed]
 vsim -c [testbench_module_name] -do "run -all; quit"
 ```
