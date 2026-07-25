@@ -15,6 +15,7 @@ Examples are according to NTUEE Switching Circuit and Logic Design (SCLD) course
 5. Check `Agree to Altera Software License Agreement`.
 6. Click `Download & Install`.
 7. Wait until it's done and click `Ok` and `Close`.
+8. Remove `altera_lite_*` directory in the directory where the file locates.
 
 ### Install ModelSim
 
@@ -64,7 +65,7 @@ EOF
 1. In `$HOME/.bashrc`, add `$HOME/intelFPGA/20.1/modelsim_ase/bin` to `$PATH` with `20.1` replaced with the actual directory name.
 2. Open `Quartus Prime Lite Edition`.
 3. Go to `Tools > Options > EDA Tool Options`.
-4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `20.1` replaced with the actual directory name.
+4. Set `ModelSim` to `$HOME/intelFPGA/20.1/modelsim_ase/bin` with `$HOME` replaced with its value and `20.1` replaced with the actual directory name.
 
 ### Examples
 
