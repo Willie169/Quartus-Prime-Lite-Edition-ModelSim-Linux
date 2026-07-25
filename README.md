@@ -14,7 +14,7 @@ Examples are according to NTUEE Switching Circuit and Logic Design (SCLD) course
 4. Select `Cyclone IV device support` on top of the default ones.
 5. Check `Agree to Altera Software License Agreement`.
 6. Click `Download & Install`.
-7. Wait until it's done and click `Finish`.
+7. Wait until it's done and click `Ok` and `Close`.
 
 ### Install ModelSim
 
