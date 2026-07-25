@@ -46,18 +46,11 @@ sudo apt install libxext6:i386 libx11-6:i386 libxft2:i386 libstdc++6:i386 libxre
 
 ### Desktop
 
-Execute the following with `25.1std` replaced with the actual directory name:
+You may move the desktop files to `~/.local/share/applications/` if you don't want them to on your desktop.
 ```
-cat > ~/.local/share/applications/quartus.desktop <<EOF
-[Desktop Entry]
-Type=Application
-Name=Quartus Prime Lite Edition
-Comment=Intel Quartus Prime Lite Edition Design Software
-Exec=$HOME/altera_lite/25.1std/quartus/bin/quartus
-Icon=$HOME/altera_lite/25.1std/quartus/adm/quartusii.png
-Terminal=false
-Categories=Development;
-EOF
+cd ~/Desktop
+mv 'Quartus (Quartus Prime '*').desktop' ~/.local/share/applications/
+mv 'Questa FSE (Quartus Prime Pro '*').desktop' ~/.local/share/applications/
 ```
 
 ### Configure ModelSim Path
